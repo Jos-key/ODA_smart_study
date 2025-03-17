@@ -1,2 +1,2 @@
 # ODA_smart_study
-Assistant for students on their school life✨✨
+Assistant for students on their school life
