@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student School Package - Main</title>
+    <!-- Google Font for Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', serif, "Georgia";
+            font-weight: bold;
+        }
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            font-family: Arial, sans-serif;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        header {
+            background: rgba(0, 115, 230, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            width: 100%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        nav {
+            background: rgba(0, 91, 181, 0.8);
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 18px;
+            display: inline-block;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background: rgba(0, 68, 148, 0.8);
+            border-radius: 5px;
+        }
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two buttons per row */
+            gap: 25px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .button-grid button {
+            background: linear-gradient(135deg, #0073e6, #005bb5);
+            color: white;
+            padding: 80px 20px; /* Increased height */
+            border: none;
+            border-radius: 15px;
+            font-size: 36px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .button-grid button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(135deg, #005bb5, #0073e6);
+        }
+        footer {
+            text-align: center;
+            background: rgba(0, 115, 230, 0.8);
+            color: white;
+            padding: 15px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px 10px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Smart Student Package</h1>
+    </header>
+    <nav>
+        <a href="intro.html">Introduction</a>
+    </nav>
+    <div class="button-grid">
+        <button onclick="window.open('smart.html', '_blank')">Smart deep study</button>
+        <button onclick="window.open('web.html', '_blank')">learn Web development</button>
+        <button onclick="window.open('phyton.html', '_blank')">learn phyton</button>
+        <button onclick="window.open('dress.html', '_blank')">Dressing code</button>
+        <button onclick="window.open('flcard.html', '_blank')">study with flashcards</button>
+        <button onclick="window.open('spellingbee.html', '_blank')">spelling bee</button>
+        <button onclick="window.open('typing.html', '_blank')">Typing speed test</button>
+        <button onclick="window.open('grading.html', '_blank')">grading system</button>
+        <button onclick="window.open('Uconv.html', '_blank')">Unit converter</button>
+        <button onclick="window.open('aboutus.html', '_blank')">About us</button>
+    </div>
+    <footer>
+        <p>&copy; 2025 smart Student's Package. All rights reserved | Designed by Yoseph Feyisa </p>
+        <a href="mailto: feyisayoseph@gmail.com">Email</a>
+        <a href="https://t.me/Godiskey1" target="_blank">Telegram</a>
+    </footer>
+</body>
+</html>
